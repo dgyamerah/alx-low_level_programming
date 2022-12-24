@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 1337
- * @s: the string to encode
+ * leet - Encodes a string into 1337
+ * @s: The string to encode
  *
- * Return: the encoded string
+ * Return: The encoded string
  */
 
 char *leet(char *s)
@@ -16,6 +16,7 @@ char *leet(char *s)
 	while (s[a])
 	{
 	b = 0;
+
 	while (b < 1)
 	{
 	if (s[a] == r[b] || s[a] - 32 == r[b])
