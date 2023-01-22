@@ -26,10 +26,10 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%s%c", separator, va_args(args, int));
 				break;
-			case 'i';
+			case 'i':
 				printf("%s%d", separator, va_arg(args, int));
 				break;
-			case 'f';
+			case 'f':
 				printf("%s%f", separator, va_arg(args, double));
 				break;
 			case 's':
@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 					s = "(nil)";
 				printf("%s%s", separator, s);
 				break;
-			default;
+			default:
 				i++;
 				continue;
 		}
