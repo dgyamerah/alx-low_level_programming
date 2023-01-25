@@ -1,20 +1,16 @@
-#ifndef CALC_H
-#define CALC_H
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#ifndef _HEADER_
+#define _HEADER_
 
 /**
  * struct op - Struct op
- *
- * @op: the operator
- * @f: the function associated
+ * @op: The operator
+ * @f: The function associated
  */
+
 typedef struct op
 {
 	char *op;
-	int (*f)(int a, int b);
+	int (*f)(int, int);
 } op_t;
 
 int op_add(int a, int b);
